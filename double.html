@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Double </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+		<link rel="stylesheet" href="assets/css/legend.css" />
+
+		<script type="text/javascript" src="js"></script>
+		<script type="text/javascript" src="legend.js"></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+		<style>
+	    #legend {
+			line-height: 0px;
+			background: white;
+			opacity: 0.8;
+			padding:5px 25px 5px 0px;
+		}
+		</style>
+
+
+
+	</head>
+
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Shelter and Location <span>by Alan Foote</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="single.html">single</a></li>
+							<li class="current"><a href="double.html">double</a></li>
+							<li class="current"><a href="triple.html">triple</a></li>
+							<li class="current"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+
+
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-mobile-alt"></span>
+						<h2>Words words words <strong>Double</strong></h2>
+						<p>Where that in the center faces the nameless horrors alone.</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+							<div id="map" style="height: 700px"></div>
+																<p></p>
+													     <h2>Using estimates from the 2019 survey, this map shows the distribution of median household income around Bend. The block groups in dark shades of red show the highest incomes, while the lightest areas contain the lowest incomes. The city parks are incorporated for comparison.</h2>
+																<p></p>
+
+							<!-- Content -->
+								<div class="content">
+									<section>
+										<a href="#" class="image featured"><img src="" alt="" /></a>
+										<header>
+											<h3>Dolore Amet Consequat</h3>
+										</header>
+										<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+										<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+										<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+									</section>
+								</div>
+
+						</section>
+
+					<!-- Two -->
+
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/alan-foote?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhbYH8qjxTcCbVr8kYtxesQ%3D%3D" class="icon brands circle fa-linkedin-in" style="font-size:48px" aria-hidden="FALSE"><span class="label">LinkedIn</span></a><li>
+						<li><a href="https://github.com/alanfoote" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Shelter and Location</li><li>Design: Alan Foote and <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				let mymap = L.map('map',{
+					minZoom: 11,
+					maxZoom: 14
+				}).setView([47.6062, -122.3321], 11);
+				let basemap = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png', {
+					attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+				}).addTo(mymap);
+
+
+
+				$.getJSON("Sea_Parcel.geojson",function (STATUS){
+			 L.geoJson(STATUS,{
+				 style: function(feature){
+		 return{ color: "Yellow", weight: .5, fillColor: "Yellow", fillOpacity: .5}
+			}
+ 		}).addTo(mymap);
+	});
+
+		$.getJSON("MHA2.geojson",function (CLASS_DESC){
+			L.geoJson(CLASS_DESC,{
+				style: function(feature){
+			return{ color: "blue", weight: .5, fillColor: "blue", fillOpacity: .5}
+			}
+		}).addTo(mymap);
+	});
+
+
+
+
+const Legend =  L.control.Legend({
+			 position: 'bottomleft',
+			 collapsed: false,
+			 symbolWidth: 30,
+			 opacity: 1,
+			 legends: [{
+					 label: "  Highest (<5414)",
+					 type: "rectangle",
+					 color: "#4d4d4d",
+					 fillColor: "#08519C",
+					 weight: 0.5
+			 },
+			 {
+					 label: "  High (<5119)",
+					 type: "rectangle",
+					 color: "#4d4d4d",
+					 fillColor: "#3182BD",
+					 weight: 0.5
+			 },{
+					 label: "  Median(<3885)",
+					 type: "rectangle",
+					 color: "#4d4d4d",
+					 fillColor: "#6BAED6",
+					 weight: 0.5
+			 },{
+					 label: "  Low (<2651)",
+					 type: "rectangle",
+					 color: "#4d4d4d",
+					 fillColor: "#BDD7E7",
+					 weight: 0.5
+			 },{
+					 label: "  Lowest (<1417)",
+					 type: "rectangle",
+					 color: "#4d4d4d",
+					 fillColor: "#EFF3FF",
+					 weight: 0.5
+			 },{
+					 label: "  Parks",
+					 type: "rectangle",
+					 color: "#4d4d4d",
+					 fillColor: "#41ae76",
+					 weight: 0.5
+			 }]
+		 })
+ .addTo(mymap);
+
+		</script>
+
+
+	</body>
+</html>
